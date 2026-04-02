@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishvanath S - Electronics & Neuromorphic Computing Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Geist+Mono:wght@400;500;700&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">VS</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#training" class="nav-link" data-section="training">Training</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#certificates" class="nav-link" data-section="certificates">Certificates</a></li>
+                <li><a href="#achievements" class="nav-link" data-section="achievements">Achievements</a></li>
+                <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="section hero-section">
+        <div class="hero-background">
+            <div class="grid-bg"></div>
+            <div class="animated-blobs">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+                <div class="blob blob-3"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Vishvanath S</h1>
+                <p class="hero-subtitle">Electronics Engineer | Neuromorphic Computing | VLSI Design</p>
+                <p class="hero-description">Crafting intelligent hardware architectures for edge AI and next-generation semiconductor innovation</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('contact')">Let's Connect</button>
+                    <a href="vcv.pdf" download class="btn btn-secondary">
+    Download CV
+</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="animated-circuit">
+                    <svg viewBox="0 0 300 300" class="circuit-svg">
+                        <circle cx="150" cy="150" r="140" fill="none" stroke="url(#grad)" stroke-width="2" opacity="0.3"/>
+                        <circle cx="150" cy="150" r="110" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.4"/>
+                        <circle cx="150" cy="150" r="80" fill="none" stroke="url(#grad)" stroke-width="1" opacity="0.5"/>
+                        <defs>
+                            <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="150" cy="50" r="8" fill="#00ff88"/>
+                        <circle cx="220" cy="150" r="8" fill="#00d4ff"/>
+                        <circle cx="150" cy="250" r="8" fill="#ff6b6b"/>
+                        <circle cx="80" cy="150" r="8" fill="#ffd93d"/>
+                        <line x1="150" y1="50" x2="220" y2="150" stroke="url(#grad)" stroke-width="2" opacity="0.6"/>
+                        <line x1="220" y1="150" x2="150" y2="250" stroke="url(#grad)" stroke-width="2" opacity="0.6"/>
+                        <line x1="150" y1="250" x2="80" y2="150" stroke="url(#grad)" stroke-width="2" opacity="0.6"/>
+                        <line x1="80" y1="150" x2="150" y2="50" stroke="url(#grad)" stroke-width="2" opacity="0.6"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="section-container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro">
+                        <h3>Aspiring Electronics Enthusiast</h3>
+                        <p>I'm a passionate Electronics and Communication Engineering student at Lovely Professional University, specializing in neuromorphic computing, VLSI design, and edge AI systems. My work focuses on designing intelligent hardware architectures that bridge the gap between biological systems and semiconductor technology.</p>
+                    </div>
+                    <div class="about-interests">
+                        <h3>Areas of Interest</h3>
+                        <div class="interest-grid">
+                            <div class="interest-card">
+                                <span class="interest-icon">🧠</span>
+                                <h4>Neuromorphic Computing</h4>
+                                <p>Biologically-inspired computing systems</p>
+                            </div>
+                            <div class="interest-card">
+                                <span class="interest-icon">⚙️</span>
+                                <h4>VLSI Design</h4>
+                                <p>Circuit design & RTL verification</p>
+                            </div>
+                            <div class="interest-card">
+                                <span class="interest-icon">🛰️</span>
+                                <h4>Satellite Systems</h4>
+                                <p>CubeSat and aerospace engineering</p>
+                            </div>
+                            <div class="interest-card">
+                                <span class="interest-icon">🔧</span>
+                                <h4>Edge AI Hardware</h4>
+                                <p>Efficient AI inference systems</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-showcase">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <span class="skill-icon">💻</span>
+                            <div class="skill-info">
+                                <h4>Languages</h4>
+                                <p>C++, Verilog</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon">🔌</span>
+                            <div class="skill-info">
+                                <h4>FPGA Platforms</h4>
+                                <p>Nexys4, Spartan 6</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon">📊</span>
+                            <div class="skill-info">
+                                <h4>EDA Tools</h4>
+                                <p>Cadence Virtuoso, Vivado</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon">🎯</span>
+                            <div class="skill-info">
+                                <h4>VLSI Expertise</h4>
+                                <p>RTL, Verification, Testing</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon">🧬</span>
+                            <div class="skill-info">
+                                <h4>Hardware Design</h4>
+                                <p>Digital, Analog, Neuromorphic</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon">⚡</span>
+                            <div class="skill-info">
+                                <h4>Soft Skills</h4>
+                                <p>Problem-solving, Collaboration</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Section -->
+    <section id="training" class="section training-section">
+        <div class="section-container">
+            <h2 class="section-title">Training & Experience</h2>
+            <div class="training-grid">
+                <div class="training-card" onclick="openModal('training-modal-1')">
+                    <div class="training-image">
+                        <div class="image-placeholder aerospace">
+                            <span>🛰️</span>
+                        </div>
+                    </div>
+                    <div class="training-info">
+                        <h3>CubeSat Modelling Trainee</h3>
+                        <p class="company">Aerion Private Limited</p>
+                        <p class="date">Jun '25 - Jul '25</p>
+                        <p class="description">FEA, Satellite Design, Communication Systems</p>
+                        <span class="click-hint">Click to learn more →</span>
+                    </div>
+                </div>
+
+                <div class="training-card" onclick="openModal('training-modal-2')">
+                    <div class="training-image">
+                        <div class="image-placeholder semiconductor">
+                            <span>🔬</span>
+                        </div>
+                    </div>
+                    <div class="training-info">
+                        <h3>Semiconductor Summer Trainee</h3>
+                        <p class="company">CeNSE, IISc Bangalore</p>
+                        <p class="date">Jun '25 - Jun '26</p>
+                        <p class="description">Manufacturing, GDSII, Device Modeling</p>
+                        <span class="click-hint">Click to learn more →</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Modals -->
+    <div id="training-modal-1" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('training-modal-1')">&times;</button>
+            <div class="modal-header">
+                <h2>CubeSat Modelling Trainee</h2>
+                <p class="modal-subtitle">Aerion Private Limited | Jun '25 - Jul '25</p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>Area of Training</h3>
+                    <p>Finite Element Analysis, Satellite Structure Design, Communication System Integration, Aerospace Prototyping</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Learning Outcomes</h3>
+                    <ul class="outcomes-list">
+                        <li>Conducted FEA on CubeSat structures for weather monitoring and navigation applications</li>
+                        <li>Modeled satellite components using Fusion 360 with high-fidelity simulations in Simulia</li>
+                        <li>Analyzed mechanical stresses and thermal loads under mission-critical conditions</li>
+                        <li>Explored communication subsystem architectures for surveillance and remote sensing</li>
+                        <li>Developed modular 3D designs following aerospace prototyping principles</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Certificate</h3>
+                    <p>Certificate from Aerion Private Limited</p>
+                    <a href="aeroinletter.pdf" target="_blank" class="btn btn-secondary">
+    View PDF Proof
+</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="training-modal-2" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('training-modal-2')">&times;</button>
+            <div class="modal-header">
+                <h2>Semiconductor Summer Trainee</h2>
+                <p class="modal-subtitle">CeNSE, IISc Bangalore | Jun '25 - Jun '26</p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>Area of Training</h3>
+                    <p>Semiconductor Manufacturing Flow, RTL to GDSII Transition, Device-level Modeling, Physical Layout Design</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Learning Outcomes</h3>
+                    <ul class="outcomes-list">
+                        <li>Comprehensive exposure to end-to-end semiconductor manufacturing from material science to chip packaging</li>
+                        <li>Analyzed foundry workflows and RTL to GDSII transition processes</li>
+                        <li>Visualized Silvaco TCAD for device-level modeling and process simulation</li>
+                        <li>Focused on standard cell architectures and interconnect routing using Cadence Virtuoso</li>
+                        <li>Gained expertise in silicon wafer tapeout and design verification</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Certificate</h3>
+                    <p>Certificate from CeNSE, IISc Bangalore</p>
+                    <a href="iiscCerificate.pdf" target="_blank" class="btn btn-secondary">
+    View PDF Proof
+</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="section-container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" onclick="openModal('project-modal-1')">
+                    <div class="project-image">
+                        <div class="image-placeholder neural">
+                            <span>🧠</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>RRAM-Based In-Memory Computing SNN</h3>
+                        <p class="date">Feb '26</p>
+                        <p class="description">Neuromorphic computing framework with RRAM crossbar arrays for edge AI</p>
+                        <span class="click-hint">View Details →</span>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openModal('project-modal-2')">
+                    <div class="project-image">
+                        <div class="image-placeholder synapse">
+                            <span>⚡</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Biologically Inspired Synaptic Circuit</h3>
+                        <p class="date">Dec '25</p>
+                        <p class="description">Neuromorphic CMOS architecture for event-driven computation</p>
+                        <span class="click-hint">View Details →</span>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openModal('project-modal-3')">
+                    <div class="project-image">
+                        <div class="image-placeholder healing">
+                            <span>🔧</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Self-Healing Computing System</h3>
+                        <p class="date">Sep '25</p>
+                        <p class="description">FPGA-based fault detection and autonomous recovery architecture</p>
+                        <span class="click-hint">View Details →</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <div id="project-modal-1" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('project-modal-1')">&times;</button>
+            <div class="modal-header">
+                <h2>RRAM-Based In-Memory Computing Spiking Neural Network</h2>
+                <p class="modal-subtitle">February 2026</p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>Targeted Problem</h3>
+                    <p>Energy inefficiency in traditional AI inference systems for edge devices. Conventional von Neumann architectures suffer from the energy cost of data movement between processor and memory.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Potential Impact</h3>
+                    <p>By utilizing RRAM crossbar arrays, this project enables computation to occur directly within memory, reducing power consumption by orders of magnitude for edge AI applications in IoT devices, mobile systems, and autonomous platforms.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Technical Implementation</h3>
+                    <ul class="outcomes-list">
+                        <li>Engineered neuromorphic computing framework using Resistive RAM crossbar arrays</li>
+                        <li>Designed 1T1R RRAM cell architecture with crossbar-based synaptic weight storage</li>
+                        <li>Implemented SNN neuron model for event-driven computation</li>
+                        <li>Performed Monte Carlo variability analysis for device-level effects</li>
+                        <li>Simulated I-V hysteresis characteristics and resistive switching behavior</li>
+                    </ul>
+                </div>
+                <div class="modal-section progress-section">
+                    <h3>Achievement Progress</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%"></div>
+                    </div>
+                    <p>85% Complete - Design verification phase</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Potential Area of Deployment</h3>
+                    <ul class="outcomes-list">
+                        <li>Edge AI inference on IoT devices</li>
+                        <li>Mobile and wearable computing systems</li>
+                        <li>Autonomous robotics and UAVs</li>
+                        <li>Real-time sensory processing</li>
+                        <li>Power-constrained embedded systems</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Tech Stack</h3>
+                    <p>Cadence Virtuoso, Verilog/Verilog-A, RRAM Device Modeling, Spiking Neural Networks, Monte Carlo Analysis</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project-modal-2" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('project-modal-2')">&times;</button>
+            <div class="modal-header">
+                <h2>Biologically Inspired Synaptic Circuit – Neuromorphic Computing</h2>
+                <p class="modal-subtitle">December 2025</p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>Targeted Problem</h3>
+                    <p>Traditional digital systems consume excessive power in event-processing tasks. This project aims to replicate the brain's efficient spike-based communication for ultra-low power applications.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Potential Impact</h3>
+                    <p>Creates a novel computing paradigm that matches biological neural behavior while maintaining hardware efficiency. Applicable to sensory processing, pattern recognition, and temporal signal analysis with minimal power overhead.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Technical Implementation</h3>
+                    <ul class="outcomes-list">
+                        <li>Designed biologically inspired synaptic circuit using CMOS-based neuromorphic architectures</li>
+                        <li>Developed SNN model at 90nm technology node</li>
+                        <li>Implemented spike-based processing circuits with parallel inputs</li>
+                        <li>Simulated neuron and synapse circuits in Cadence Virtuoso & Spectre</li>
+                        <li>Analyzed synaptic response characteristics and threshold activation</li>
+                    </ul>
+                </div>
+                <div class="modal-section progress-section">
+                    <h3>Achievement Progress</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 90%"></div>
+                    </div>
+                    <p>90% Complete - Simulation and validation</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Potential Area of Deployment</h3>
+                    <ul class="outcomes-list">
+                        <li>Bio-signal processing (EEG, ECG analysis)</li>
+                        <li>Neuromorphic sensor arrays</li>
+                        <li>Pattern recognition systems</li>
+                        <li>Low-power edge computing</li>
+                        <li>Brain-computer interfaces</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Tech Stack</h3>
+                    <p>Cadence Virtuoso & Spectre, CMOS Digital/Analog Circuit Design, Spiking Neural Networks</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project-modal-3" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('project-modal-3')">&times;</button>
+            <div class="modal-header">
+                <h2>Self-Healing Computing System – Bharat Electronics Limited</h2>
+                <p class="modal-subtitle">September 2025</p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>Targeted Problem</h3>
+                    <p>Modern digital systems face increasing fault rates from process variations, aging, and radiation effects. Traditional systems require complete shutdown for repair; this system enables continuous operation during fault recovery.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Potential Impact</h3>
+                    <p>Dramatically improves system reliability and uptime for mission-critical applications. Enables autonomous fault detection and recovery without external intervention, reducing downtime and maintenance costs in aerospace, defense, and high-reliability computing.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Technical Implementation</h3>
+                    <ul class="outcomes-list">
+                        <li>Designed 4-bit ALU with integrated BIST mechanism</li>
+                        <li>Developed self-healing architecture using Xilinx FPGA partial reconfiguration</li>
+                        <li>Implemented fault detection circuitry for runtime monitoring</li>
+                        <li>Enabled dynamic isolation and replacement of faulty logic blocks</li>
+                        <li>Performed functional verification and hardware testing with fault injection</li>
+                    </ul>
+                </div>
+                <div class="modal-section progress-section">
+                    <h3>Achievement Progress</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 95%"></div>
+                    </div>
+                    <p>95% Complete - Hardware deployment phase</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Potential Area of Deployment</h3>
+                    <ul class="outcomes-list">
+                        <li>Aerospace and satellite systems</li>
+                        <li>Defense applications</li>
+                        <li>Medical implants and devices</li>
+                        <li>High-reliability industrial control</li>
+                        <li>Autonomous systems and robotics</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Tech Stack</h3>
+                    <p>Verilog, Xilinx Vivado, FPGA (Nexys4), Digital System Design, Hardware Verification, Fault-Tolerant Computing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section certificates-section">
+        <div class="section-container">
+            <h2 class="section-title">Certifications & Credentials</h2>
+            <div class="certificates-grid">
+                <div class="certificate-card" onclick="openModal('cert-modal-1')">
+                    <div class="cert-icon">📜</div>
+                    <h3>FPGA Programming & Architecture</h3>
+                    <p class="cert-issuer">NIELIT Calicut, NPTEL</p>
+                    <p class="cert-date">October 2025</p>
+                    <span class="click-hint">View Details →</span>
+                </div>
+
+                <div class="certificate-card" onclick="openModal('cert-modal-2')">
+                    <div class="cert-icon">🗄️</div>
+                    <h3>Database Management System</h3>
+                    <p class="cert-issuer">IIT Kharagpur, NPTEL</p>
+                    <p class="cert-date">October 2025</p>
+                    <span class="click-hint">View Details →</span>
+                </div>
+
+                <div class="certificate-card" onclick="openModal('cert-modal-3')">
+                    <div class="cert-icon">🎖️</div>
+                    <h3>RTL to GDS II</h3>
+                    <p class="cert-issuer">Digital Badge, Cadence Design System</p>
+                    <p class="cert-date">November 2025</p>
+                    <span class="click-hint">View Details →</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modals -->
+    <div id="cert-modal-1" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('cert-modal-1')">&times;</button>
+            <div class="modal-header">
+                <h2>FPGA Programming and Architecture</h2>
+                <p class="modal-subtitle">NIELIT Calicut, NPTEL | October 2025</p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>Course Overview</h3>
+                    <p>Comprehensive training in FPGA design principles, programming methodologies, and hardware implementation. Covered topics including hardware description languages, synthesis, and place-and-route optimization.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Skills Acquired</h3>
+                    <ul class="outcomes-list">
+                        <li>FPGA architecture and design paradigms</li>
+                        <li>Hardware description language proficiency</li>
+                        <li>Synthesis and optimization techniques</li>
+                        <li>Timing closure and placement strategies</li>
+                        <li>Real-world FPGA deployment</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Certificate</h3>
+                    <p>Official certification from NPTEL</p>
+                   <a href="fpga-30_signed.pdf" target="_blank" class="btn btn-secondary">
+    View PDF Proof
+</a>                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cert-modal-2" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('cert-modal-2')">&times;</button>
+            <div class="modal-header">
+                <h2>Database Management System</h2>
+                <p class="modal-subtitle">IIT Kharagpur, NPTEL | October 2025</p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>Course Overview</h3>
+                    <p>Advanced study of database management systems including relational databases, query optimization, transaction management, and data consistency models. Applicable to embedded systems and hardware design data management.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Skills Acquired</h3>
+                    <ul class="outcomes-list">
+                        <li>Database design and normalization</li>
+                        <li>SQL and query optimization</li>
+                        <li>Transaction management and ACID properties</li>
+                        <li>Indexing and query performance</li>
+                        <li>Real-world database applications</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Certificate</h3>
+                    <p>Official certification from IIT Kharagpur</p>
+                    <a href="Data Base Management System.pdf" target="_blank" class="btn btn-secondary">
+    View PDF Proof
+</a>                          </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cert-modal-3" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('cert-modal-3')">&times;</button>
+            <div class="modal-header">
+                <h2>RTL to GDS II</h2gi
+
+                <p class="modal-subtitle">Digital Badge, Cadence Design System | November 2025</p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>Course Overview</h3>
+                    <p>Specialized training in the complete RTL-to-GDS II flow, covering register-transfer level design, logic synthesis, place-and-route, and design verification. Industry-standard curriculum directly applicable to chip design.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Skills Acquired</h3>
+                    <ul class="outcomes-list">
+                        <li>RTL design and testbench development</li>
+                        <li>Logic synthesis and optimization</li>
+                        <li>Physical layout design</li>
+                        <li>Timing and power analysis</li>
+                        <li>Design rule checking and verification</li>
+                        <li>GDS II file generation and validation</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Certificate</h3>
+                    <p>Digital Badge from Cadence Design System</p>
+                   <a href="cad.pdf" target="_blank" class="btn btn-secondary">
+    View PDF Proof
+</a>                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section achievements-section">
+        <div class="section-container">
+            <h2 class="section-title">Achievements & Recognition</h2>
+            <div class="achievements-list">
+                <div class="achievement-item" onclick="openModal('achievement-modal-1')">
+                    <div class="achievement-marker">🏆</div>
+                    <div class="achievement-content">
+                        <h3>First Position - Fit-Fusion</h3>
+                        <p class="achievement-event">Cognizance, IIT Roorkee 2025</p>
+                        <p class="achievement-description">Won the prestigious Fit-Fusion competition showcasing innovative electronics projects and design solutions.</p>
+                        <span class="click-hint">Learn More →</span>
+                    </div>
+                    <div class="achievement-date">Mar '25</div>
+                </div>
+
+                <div class="achievement-item" onclick="openModal('achievement-modal-2')">
+                    <div class="achievement-marker">🥈</div>
+                    <div class="achievement-content">
+                        <h3>First Runner Up - R2VC Workshop</h3>
+                        <p class="achievement-event">IIT Roorkee 2025</p>
+                        <p class="achievement-description">Second place in the R2VC (Robotics & Renewable Energy Ventures Challenge) workshop demonstrating technical excellence.</p>
+                        <span class="click-hint">Learn More →</span>
+                    </div>
+                    <div class="achievement-date">Feb '25</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievement Modals -->
+    <div id="achievement-modal-1" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('achievement-modal-1')">&times;</button>
+            <div class="modal-header">
+                <h2>First Position - Fit-Fusion</h2>
+                <p class="modal-subtitle">Cognizance, IIT Roorkee | March 2025</p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>Competition Overview</h3>
+                    <p>Fit-Fusion is a premier electronics and innovation competition at IIT Roorkee's annual techfest, attracting top talent from across the country. The competition evaluates innovation, technical depth, and practical applicability of electronic systems.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Achievement Details</h3>
+                    <p>Secured the first position among numerous competitive entries by presenting an advanced neuromorphic computing architecture with superior power efficiency and innovative design approaches.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Key Highlights</h3>
+                    <ul class="outcomes-list">
+                        <li>Demonstrated cutting-edge neuromorphic computing concepts</li>
+                        <li>Showcased technical depth and innovative problem-solving</li>
+                        <li>Presented comprehensive design documentation and validation</li>
+                        <li>Competed against elite teams from premier institutions</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Certificate/Proof</h3>
+                    <button class="btn btn-secondary" onclick="alert('Award certificate would be displayed here')">View Award Certificate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="achievement-modal-2" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('achievement-modal-2')">&times;</button>
+            <div class="modal-header">
+                <h2>First Runner Up - R2VC Workshop</h2>
+                <p class="modal-subtitle">IIT Roorkee | February 2025</p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>Workshop Overview</h3>
+                    <p>R2VC (Robotics & Renewable Energy Ventures Challenge) is an intensive workshop and competition focusing on practical applications of robotics and renewable energy technologies. Emphasizes innovation, feasibility, and real-world impact.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Achievement Details</h3>
+                    <p>Achieved second position among competitive teams by developing a fault-tolerant robotics system with integrated self-healing capabilities, demonstrating both technical expertise and innovative thinking.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Key Highlights</h3>
+                    <ul class="outcomes-list">
+                        <li>Designed fault detection and recovery mechanisms</li>
+                        <li>Demonstrated autonomous system reliability</li>
+                        <li>Presented comprehensive technical documentation</li>
+                        <li>Competed with experienced teams across the nation</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Certificate/Proof</h3>
+                    <button class="btn btn-secondary" onclick="alert('Award certificate would be displayed here')">View Award Certificate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+        <div class="section-container">
+            <h2 class="section-title">Educational Background</h2>
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="education-card">
+                            <h3>Lovely Professional University, Punjab</h3>
+                            <p class="degree">Bachelor of Technology - Electronics and Communication Engineering</p>
+                            <div class="edu-details">
+                                <span class="edu-cgpa">CGPA: 7.77/10</span>
+                                <span class="edu-date">2023 - 2027</span>
+                            </div>
+                            <p class="edu-location">Jalandhar, Punjab</p>
+                            <div class="edu-highlights">
+                                <h4>Key Coursework</h4>
+                                <ul>
+                                    <li>VLSI Design & Verification</li>
+                                    <li>Digital System Design</li>
+                                    <li>Analog Circuit Design</li>
+                                    <li>Microprocessor Architecture</li>
+                                    <li>Signal Processing</li>
+                                    <li>Semiconductor Devices</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="education-card">
+                            <h3>Sri Aurobindo Mira Universal School</h3>
+                            <p class="degree">12th Standard with Science</p>
+                            <div class="edu-details">
+                                <span class="edu-cgpa">Percentage: 70.8%</span>
+                                <span class="edu-date">2021 - 2023</span>
+                            </div>
+                            <p class="edu-location">Madurai, Tamil Nadu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="education-card">
+                            <h3>Sri Aurobindo Mira Universal School</h3>
+                            <p class="degree">10th Standard with Science</p>
+                            <div class="edu-details">
+                                <span class="edu-cgpa">Percentage: 80.8%</span>
+                                <span class="edu-date">2020 - 2021</span>
+                            </div>
+                            <p class="edu-location">Madurai, Tamil Nadu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="section-container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <div class="contact-intro">
+                    <p>I'm always open to collaborations, discussions, and opportunities in electronics engineering, VLSI design, and neuromorphic computing. Feel free to reach out!</p>
+                </div>
+                <div class="contact-methods">
+                    <a href="tel:+919941356600" class="contact-card phone-card">
+                        <span class="contact-icon">📞</span>
+                        <h3>Phone</h3>
+                        <p>+91 99413 56600</p>
+                        <span class="contact-hint">Tap to call</span>
+                    </a>
+                    <a href="mailto:vishvanath18112005@gmail.com" class="contact-card email-card">
+                        <span class="contact-icon">✉️</span>
+                        <h3>Email</h3>
+                        <p>vishvanath18112005@gmail.com</p>
+                        <span class="contact-hint">Tap to email</span>
+                    </a>
+                    <a href="https://linkedin.com/in/vishvanath07" target="_blank" class="contact-card linkedin-card">
+                        <span class="contact-icon">💼</span>
+                        <h3>LinkedIn</h3>
+                        <p>linkedin.com/in/vishvanath07</p>
+                        <span class="contact-hint">Visit profile</span>
+                    </a>
+                                    </div>
+                <div class="contact-form-section">
+                    <h3>Send me a Message</h3>
+                    <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Vishvanath S. Electronics Engineer & VLSI Designer. All rights reserved.</p>
+            <p>Crafted with precision and innovation 🚀</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
