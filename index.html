@@ -128,7 +128,7 @@
                             <span class="skill-icon">💻</span>
                             <div class="skill-info">
                                 <h4>Languages</h4>
-                                <p>C++, Verilog</p>
+                                <p>C++, Verilog, SystemVerilog</p>
                             </div>
                         </div>
                         <div class="skill-item">
@@ -206,6 +206,21 @@
                         <span class="click-hint">Click to learn more →</span>
                     </div>
                 </div>
+
+                <div class="training-card" onclick="openModal('training-modal-3')">
+                    <div class="training-image">
+                        <div class="image-placeholder verification">
+                            <span>🧪</span>
+                        </div>
+                    </div>
+                    <div class="training-info">
+                        <h3>Design and Verification Trainee</h3>
+                        <p class="company">Futurewiz</p>
+                        <p class="date">Jun '26 - Jul '26</p>
+                        <p class="description">RTL Design, SystemVerilog, Functional Verification</p>
+                        <span class="click-hint">Click to learn more →</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -277,11 +292,50 @@
         </div>
     </div>
 
+    <div id="training-modal-3" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('training-modal-3')">&times;</button>
+            <div class="modal-header">
+                <h2>Design and Verification Trainee</h2>
+                <p class="modal-subtitle">Futurewiz | Jun '26 - Jul '26</p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>Area of Training</h3>
+                    <p>Digital Design, RTL Design Flow, Verilog HDL, SystemVerilog Verification, Assertions and Functional Coverage</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Learning Outcomes</h3>
+                    <ul class="outcomes-list">
+                        <li>Completed hands-on training in digital design and functional verification, covering the RTL design flow from specification through simulation and debug</li>
+                        <li>Designed combinational and sequential digital circuits, including finite state machines, using Verilog HDL with synthesizable RTL coding practices</li>
+                        <li>Built layered verification testbenches in SystemVerilog using interfaces, classes, randomization, and constraints for stimulus generation</li>
+                        <li>Applied SystemVerilog assertions, functional coverage, and scoreboard-based checking to validate design behavior and measure verification completeness</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Projects Section -->
     <section id="projects" class="section projects-section">
         <div class="section-container">
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
+                <div class="project-card" onclick="openModal('project-modal-4')">
+                    <div class="project-image">
+                        <div class="image-placeholder verification">
+                            <span>✅</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>APB Slave Verification Environment</h3>
+                        <p class="date">Jun '26</p>
+                        <p class="description">SystemVerilog layered testbench with constrained-random stimulus for an AMBA APB slave</p>
+                        <span class="click-hint">View Details →</span>
+                    </div>
+                </div>
+
                 <div class="project-card" onclick="openModal('project-modal-1')">
                     <div class="project-image">
                         <div class="image-placeholder neural">
@@ -328,6 +382,57 @@
     </section>
 
     <!-- Project Modals -->
+    <div id="project-modal-4" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('project-modal-4')">&times;</button>
+            <div class="modal-header">
+                <h2>APB Slave Verification Environment – SystemVerilog UVM-Style Testbench</h2>
+                <p class="modal-subtitle">June 2026</p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>Targeted Problem</h3>
+                    <p>Bus-interface peripherals must comply strictly with protocol timing and behavior, and directed tests alone miss corner-case and error scenarios. This project builds a reusable, self-checking verification environment to validate an AMBA APB slave for protocol compliance and functional correctness.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Potential Impact</h3>
+                    <p>Automated response checking and coverage-driven constrained-random stimulus improve verification completeness and catch protocol violations early, reducing debug time and the risk of functional bugs reaching silicon in SoC peripheral designs.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Technical Implementation</h3>
+                    <ul class="outcomes-list">
+                        <li>Designed and implemented a complete SystemVerilog verification environment for an AMBA APB (Advanced Peripheral Bus) slave using a layered testbench architecture</li>
+                        <li>Developed a modular testbench comprising interface, transaction, generator, driver, monitor, scoreboard, and environment components for reusable and scalable stimulus and checking</li>
+                        <li>Implemented constrained-random stimulus generation with an error-learning feedback loop that dynamically adjusts constraints to improve coverage of corner-case and error scenarios</li>
+                        <li>Built a scoreboard for automated response checking against expected APB read/write behavior, flagging protocol violations and functional mismatches in real time</li>
+                        <li>Authored the APB slave DUT independently and verified it against the custom testbench, producing a structured verification report on functional coverage and test outcomes</li>
+                    </ul>
+                </div>
+                <div class="modal-section progress-section">
+                    <h3>Achievement Progress</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%"></div>
+                    </div>
+                    <p>100% Complete - Verification report delivered</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Potential Area of Deployment</h3>
+                    <ul class="outcomes-list">
+                        <li>SoC peripheral and bus-interface verification</li>
+                        <li>Pre-silicon functional verification of IP blocks</li>
+                        <li>Protocol compliance checking for AMBA-based designs</li>
+                        <li>Reusable testbench templates for UVM migration</li>
+                        <li>Coverage-driven verification flows in VLSI design teams</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Tech Stack</h3>
+                    <p>SystemVerilog, APB Protocol, Functional Verification, Constrained-Random Verification, Testbench Architecture, Scoreboard-Based Checking</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="project-modal-1" class="modal">
         <div class="modal-content">
             <button class="close-modal" onclick="closeModal('project-modal-1')">&times;</button>
@@ -721,7 +826,7 @@
                             <h3>Lovely Professional University, Punjab</h3>
                             <p class="degree">Bachelor of Technology - Electronics and Communication Engineering</p>
                             <div class="edu-details">
-                                <span class="edu-cgpa">CGPA: 7.77/10</span>
+                                <span class="edu-cgpa">CGPA: 7.79/10</span>
                                 <span class="edu-date">2023 - 2027</span>
                             </div>
                             <p class="edu-location">Jalandhar, Punjab</p>
