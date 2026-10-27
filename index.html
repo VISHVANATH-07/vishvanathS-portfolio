@@ -429,6 +429,36 @@
                     <h3>Tech Stack</h3>
                     <p>SystemVerilog, APB Protocol, Functional Verification, Constrained-Random Verification, Testbench Architecture, Scoreboard-Based Checking</p>
                 </div>
+                <div class="modal-section">
+                    <h3>Specification Document</h3>
+                    <div class="pdf-viewer">
+                        <object data="apb-spec.pdf#toolbar=0&navpanes=0" type="application/pdf">
+                            <p>PDF preview is not supported on this device.</p>
+                        </object>
+                    </div>
+                    <a href="apb-spec.pdf" target="_blank" rel="noopener" class="btn btn-secondary pdf-open-btn">Open Specification in new tab</a>
+                </div>
+                <div class="modal-section">
+                    <h3>Simulation Outputs</h3>
+                    <div class="media-gallery">
+                        <figure class="media-item" onclick="openLightbox('apb-output-1.png')">
+                            <img src="apb-output-1.png" alt="Simulation Output 1" loading="lazy" onerror="this.closest('figure').style.display='none'">
+                            <figcaption>Simulation Output 1</figcaption>
+                        </figure>
+                        <figure class="media-item" onclick="openLightbox('apb-output-2.png')">
+                            <img src="apb-output-2.png" alt="Simulation Output 2" loading="lazy" onerror="this.closest('figure').style.display='none'">
+                            <figcaption>Simulation Output 2</figcaption>
+                        </figure>
+                        <figure class="media-item" onclick="openLightbox('apb-output-3.png')">
+                            <img src="apb-output-3.png" alt="Simulation Output 3" loading="lazy" onerror="this.closest('figure').style.display='none'">
+                            <figcaption>Simulation Output 3</figcaption>
+                        </figure>
+                        <figure class="media-item" onclick="openLightbox('apb-output-4.png')">
+                            <img src="apb-output-4.png" alt="Simulation Output 4" loading="lazy" onerror="this.closest('figure').style.display='none'">
+                            <figcaption>Simulation Output 4</figcaption>
+                        </figure>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -479,6 +509,15 @@
                 <div class="modal-section">
                     <h3>Tech Stack</h3>
                     <p>Cadence Virtuoso, Verilog/Verilog-A, RRAM Device Modeling, Spiking Neural Networks, Monte Carlo Analysis</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Project Overview</h3>
+                    <div class="pdf-viewer">
+                        <object data="rram-overview.pdf#toolbar=0&navpanes=0" type="application/pdf">
+                            <p>PDF preview is not supported on this device.</p>
+                        </object>
+                    </div>
+                    <a href="rram-overview.pdf" target="_blank" rel="noopener" class="btn btn-secondary pdf-open-btn">Open Project Overview in new tab</a>
                 </div>
             </div>
         </div>
@@ -531,6 +570,19 @@
                     <h3>Tech Stack</h3>
                     <p>Cadence Virtuoso & Spectre, CMOS Digital/Analog Circuit Design, Spiking Neural Networks</p>
                 </div>
+                <div class="modal-section">
+                    <h3>Circuit and Analysis</h3>
+                    <div class="media-gallery">
+                        <figure class="media-item" onclick="openLightbox('synaptic-circuit.png')">
+                            <img src="synaptic-circuit.png" alt="Circuit Diagram" loading="lazy" onerror="this.closest('figure').style.display='none'">
+                            <figcaption>Circuit Diagram</figcaption>
+                        </figure>
+                        <figure class="media-item" onclick="openLightbox('synaptic-analysis.png')">
+                            <img src="synaptic-analysis.png" alt="Analysis Results" loading="lazy" onerror="this.closest('figure').style.display='none'">
+                            <figcaption>Analysis Results</figcaption>
+                        </figure>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -581,6 +633,23 @@
                 <div class="modal-section">
                     <h3>Tech Stack</h3>
                     <p>Verilog, Xilinx Vivado, FPGA (Nexys4), Digital System Design, Hardware Verification, Fault-Tolerant Computing</p>
+                </div>
+                <div class="modal-section">
+                    <h3>System Diagrams and Implementation</h3>
+                    <div class="media-gallery">
+                        <figure class="media-item" onclick="openLightbox('healing-block-diagram.png')">
+                            <img src="healing-block-diagram.png" alt="Block Diagram" loading="lazy" onerror="this.closest('figure').style.display='none'">
+                            <figcaption>Block Diagram</figcaption>
+                        </figure>
+                        <figure class="media-item" onclick="openLightbox('healing-partial-reconfig.png')">
+                            <img src="healing-partial-reconfig.png" alt="Partial Reconfiguration" loading="lazy" onerror="this.closest('figure').style.display='none'">
+                            <figcaption>Partial Reconfiguration</figcaption>
+                        </figure>
+                        <figure class="media-item" onclick="openLightbox('healing-fpga.png')">
+                            <img src="healing-fpga.png" alt="FPGA Implementation" loading="lazy" onerror="this.closest('figure').style.display='none'">
+                            <figcaption>FPGA Implementation</figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </div>
@@ -687,8 +756,7 @@
         <div class="modal-content">
             <button class="close-modal" onclick="closeModal('cert-modal-3')">&times;</button>
             <div class="modal-header">
-                <h2>RTL to GDS II</h2gi
-
+                <h2>RTL to GDS II</h2>
                 <p class="modal-subtitle">Digital Badge, Cadence Design System | November 2025</p>
             </div>
             <div class="modal-body">
@@ -774,8 +842,13 @@
                     </ul>
                 </div>
                 <div class="modal-section">
-                    <h3>Certificate/Proof</h3>
-                    <button class="btn btn-secondary" onclick="alert('Award certificate would be displayed here')">View Award Certificate</button>
+                    <h3>Photo / Proof</h3>
+                    <div class="media-gallery single">
+                        <figure class="media-item" onclick="openLightbox('fitfusion.jpg')">
+                            <img src="fitfusion.jpg" alt="Fit-Fusion, Cognizance, IIT Roorkee 2025" loading="lazy" onerror="this.closest('figure').style.display='none'">
+                            <figcaption>Fit-Fusion, Cognizance, IIT Roorkee 2025</figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </div>
@@ -807,8 +880,13 @@
                     </ul>
                 </div>
                 <div class="modal-section">
-                    <h3>Certificate/Proof</h3>
-                    <button class="btn btn-secondary" onclick="alert('Award certificate would be displayed here')">View Award Certificate</button>
+                    <h3>Photo / Proof</h3>
+                    <div class="media-gallery single">
+                        <figure class="media-item" onclick="openLightbox('r2vc.jpg')">
+                            <img src="r2vc.jpg" alt="R2VC Workshop, IIT Roorkee 2025" loading="lazy" onerror="this.closest('figure').style.display='none'">
+                            <figcaption>R2VC Workshop, IIT Roorkee 2025</figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </div>
@@ -932,6 +1010,11 @@
             <p>Crafted with precision and innovation 🚀</p>
         </div>
     </footer>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <img id="lightbox-img" src="" alt="Enlarged view">
+    </div>
 
     <script src="script.js"></script>
 </body>
