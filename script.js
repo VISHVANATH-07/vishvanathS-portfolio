@@ -653,3 +653,19 @@ window.addEventListener('beforeunload', function() {
     revealObserver?.disconnect();
     observer?.disconnect();
 });
+
+
+// Image lightbox
+function openLightbox(src) {
+    var lb = document.getElementById('lightbox');
+    document.getElementById('lightbox-img').src = src;
+    lb.classList.add('active');
+}
+
+function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+}
+
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeLightbox();
+});
